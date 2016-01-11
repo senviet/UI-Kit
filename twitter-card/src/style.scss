@@ -1,0 +1,92 @@
+html {
+  background: #444444;
+  text-align: center;
+}
+
+.twitter-card {
+  position: relative;
+  left: 50%;
+  top: 200px;
+  width: 195px;
+  height: 210px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.20);
+  overflow: hidden;
+  .twitter-card-header {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/backdrop.png");
+    width: 100%;
+    height: 90px;
+    position: relative;
+    .twitter-card-header-gradient{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-image:linear-gradient(-180deg, rgba(0, 0, 0, 0.00) 60%, rgba(0, 0, 0, 0.90) 100%);
+      background-image:-webkit-gradient(-180deg, rgba(0, 0, 0, 0.00) 60%, rgba(0, 0, 0, 0.90) 100%);
+    }
+    .twitter-avatar {
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      top: 48px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+    .twitter-card-button {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 75px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.30);
+      svg{
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 9px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0 auto;
+      }
+      &.button-left {
+        left: 15px;
+      }
+      &.button-right {
+        background: #55ACEE;
+        right: 15px;
+      }
+    }
+  }
+  .twitter-card-content {
+    margin-top: 28px;
+    font-family: HelveticaNeue;
+    h1 {
+      font-weight: bold;
+      font-size: 14.39px;
+      color: #505050;
+      line-height: 17px;
+      margin-bottom: 3px;
+    }
+    span{
+      display: block;
+      font-size: 9.62px;
+      color: #9B9B9B;
+      line-height: 11px;
+    }
+    p{
+      margin-top: 16px;
+      font-size: 10.06px;
+      color: #9B9B9B;
+      line-height: 12px;
+    }
+  }
+}
